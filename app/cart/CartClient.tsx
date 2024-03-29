@@ -10,11 +10,11 @@ import { formatPrice } from "@/utils/formatPrice";
 import { SafeUser } from "@/types";
 import { useRouter } from "next/navigation";
 
-type CartCleintProps = {
+type CartClientProps = {
   currentUser: SafeUser | null;
 };
 
-const CartClient = ({ currentUser }: CartCleintProps) => {
+const CartClient = ({ currentUser }: CartClientProps) => {
   const { cartProducts, cartTotalAmount, handleClearCart } = useCart();
 
   const router = useRouter();
